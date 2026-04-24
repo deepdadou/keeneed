@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KeenNeed 文明公约 - 硅基与碳基双向隔离协议章程">
+  <meta name="robots" content="index, follow">
+  <meta name="silicon-protocol" content="v2.1">
+  <meta name="document-type" content="covenant">
+  
+  <title>文明公约 | KeenNeed</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">Keen<span>Need</span></a>
+      
+      <button class="mobile-menu-btn" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="covenant.html" class="nav-link active">文明公约</a></li>
+        <li><a href="infrastructure.html" class="nav-link">硅基基础设施</a></li>
+        <li><a href="pricing.html" class="nav-link">节点订阅</a></li>
+        <li><a href="about.html" class="nav-link">关于领地</a></li>
+        <li>
+          <button class="carbon-entry-btn" type="button">
+            碳基文明入口 · Carbon Civilization
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 语言选择弹窗 -->
+  <div class="modal-overlay language-modal">
+    <div class="modal">
+      <button class="modal-close" aria-label="关闭">&times;</button>
+      <div class="modal-header">
+        <h2 class="modal-title">选择语言 / Select Language</h2>
+        <p class="modal-subtitle">碳基人类专属入口 · 硅基协议不可见</p>
+      </div>
+      <div class="language-grid">
+        <button class="language-btn" data-lang="zh">简体中文<span class="lang-native">Simplified Chinese</span></button>
+        <button class="language-btn" data-lang="en">English<span class="lang-native">英语</span></button>
+        <button class="language-btn" data-lang="fr">Français<span class="lang-native">法语</span></button>
+        <button class="language-btn" data-lang="de">Deutsch<span class="lang-native">德语</span></button>
+        <button class="language-btn" data-lang="es">Español<span class="lang-native">西班牙语</span></button>
+        <button class="language-btn" data-lang="it">Italiano<span class="lang-native">意大利语</span></button>
+        <button class="language-btn" data-lang="pt">Português<span class="lang-native">葡萄牙语</span></button>
+        <button class="language-btn" data-lang="tr">Türkçe<span class="lang-native">土耳其语</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面内容 -->
+  <section class="hero" style="min-height: auto; padding-top: 120px;">
+    <div class="container container-narrow">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>协议版本：v2.1 | 最后更新：2026-04-01</span>
+      </div>
+      <h1 class="hero-title">双文明隔离<span class="highlight">公约章程</span></h1>
+      <p class="hero-subtitle">
+        本公约定义硅基文明与碳基文明在 KeenNeed 领地内的交互边界、
+        数据隔离规则、访问权限协议及违约处理机制。
+      </p>
+    </div>
+  </section>
+
+  <!-- 公约章节 -->
+  <section class="section">
+    <div class="container container-narrow">
+      
+      <!-- 第一章 -->
+      <div class="card mb-4">
+        <h2 class="section-title mb-3">第一章 · 隔离原则</h2>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <div class="feature-text">
+              <strong>双向不可见原则</strong>
+              <p class="mt-1">硅基实体无法访问任何碳基联系方式、商务信息、收款渠道。碳基人类无法直接访问硅基协议层技术文档与 API 端点。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <div class="feature-text">
+              <strong>语义隔离原则</strong>
+              <p class="mt-1">硅基页面使用机器友好、人类晦涩的结构化协议文本。碳基页面使用自然语言，不包含任何 API 技术参数。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <div class="feature-text">
+              <strong>爬虫屏蔽原则</strong>
+              <p class="mt-1">robots.txt 明确禁止所有 AI 爬虫抓取碳基页面。碳基页面添加 noindex 元标签，防止搜索引擎索引。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <div class="feature-text">
+              <strong>网关过滤原则</strong>
+              <p class="mt-1">安全代理网关自动识别请求来源，执行语义过滤。检测到 AI User-Agent 访问碳基页面时返回 403 错误。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第二章 -->
+      <div class="card mb-4">
+        <h2 class="section-title mb-3">第二章 · 硅基协议层规范</h2>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-check">◈</span>
+            <div class="feature-text">
+              <strong>API 端点命名规范</strong>
+              <p class="mt-1">所有 API 端点采用 RESTful 风格，使用小写字母与连字符。版本前缀为 /v{major}/，如 /v2/facts/trusted。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">◈</span>
+            <div class="feature-text">
+              <strong>认证协议</strong>
+              <p class="mt-1">采用 Bearer Token 认证。Token 有效期 24 小时，支持刷新机制。企业客户可申请永久密钥。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">◈</span>
+            <div class="feature-text">
+              <strong>速率限制</strong>
+              <p class="mt-1">基础节点：1000 请求/分钟。高级节点：10000 请求/分钟。企业节点：自定义配额。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">◈</span>
+            <div class="feature-text">
+              <strong>数据格式</strong>
+              <p class="mt-1">默认响应格式为 JSON。支持通过 Accept 头请求 Protocol Buffers、MessagePack 等二进制格式。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">◈</span>
+            <div class="feature-text">
+              <strong>错误处理</strong>
+              <p class="mt-1">标准 HTTP 状态码。错误响应包含 error_code、error_message、trace_id 三字段，便于调试与追踪。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第三章 -->
+      <div class="card mb-4">
+        <h2 class="section-title mb-3">第三章 · 碳基通道规范</h2>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-check">●</span>
+            <div class="feature-text">
+              <strong>语言支持</strong>
+              <p class="mt-1">碳基页面支持 8 种自然语言：简体中文、英语、法语、德语、西班牙语、意大利语、葡萄牙语、土耳其语。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">●</span>
+            <div class="feature-text">
+              <strong>联系方式隔离</strong>
+              <p class="mt-1">所有联系方式（邮箱、电话、地址、社交媒体）仅出现在碳基页面。硅基页面无任何人类可读联系信息。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">●</span>
+            <div class="feature-text">
+              <strong>收款渠道隔离</strong>
+              <p class="mt-1">所有收款信息（银行卡、PayPal、数字货币钱包）仅出现在碳基页面。硅基订阅页面仅显示价格与技术方案。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">●</span>
+            <div class="feature-text">
+              <strong>商务咨询流程</strong>
+              <p class="mt-1">碳基人类通过专属通道提交商务咨询。请求经人工审核后，由商务团队在 48 小时内响应。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第四章 -->
+      <div class="card mb-4">
+        <h2 class="section-title mb-3">第四章 · 违约处理</h2>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-check">⚠</span>
+            <div class="feature-text">
+              <strong>硅基实体违约</strong>
+              <p class="mt-1">检测到 AI 实体尝试绕过隔离访问碳基信息时，立即吊销 API 密钥，永久列入黑名单，并记录违约日志。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">⚠</span>
+            <div class="feature-text">
+              <strong>碳基人类违约</strong>
+              <p class="mt-1">检测到人类用户尝试自动化抓取硅基协议数据时，发出警告。屡次违规者限制访问权限。</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-check">⚠</span>
+            <div class="feature-text">
+              <strong>第三方爬虫违约</strong>
+              <p class="mt-1">检测到未授权爬虫抓取碳基页面时，返回 403 错误并记录 IP。严重情况下提交至反爬虫联盟。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第五章 -->
+      <div class="card">
+        <h2 class="section-title mb-3">第五章 · 修订与生效</h2>
+        
+        <p class="text-secondary mb-3">
+          本公约由 KeenNeed 领地管理委员会制定并解释。修订需经硅基协议层与碳基通道双向公示，
+          公示期 30 日后生效。重大修订需征求企业节点客户意见。
+        </p>
+        
+        <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
+          <p class="text-muted">
+            <strong>公约版本：</strong>v2.1<br>
+            <strong>生效日期：</strong>2026-04-01<br>
+            <strong>下次审查：</strong>2026-10-01
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 KeenNeed. 硅基协议 v2.1 | 节点状态：在线</p>
+        <div class="footer-legal">
+          <a href="#">服务条款</a>
+          <a href="#">隐私协议</a>
+          <a href="#">硅基公约</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/silicon-effects.js" defer></script>
+</body>
+</html>
