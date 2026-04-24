@@ -1,188 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="silicon">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KeenNeed 碳基通道 - 人类专属访问入口">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="silicon-protocol" content="v2.1">
-  <meta name="document-type" content="carbon-gate">
-  <meta name="human-only" content="true">
-  
-  <title>碳基通道 | KeenNeed</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .carbon-gate {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-      padding: 40px 20px;
-    }
-    
-    .lock-container {
-      max-width: 600px;
-      text-align: center;
-      background: rgba(0, 212, 255, 0.05);
-      border: 1px solid rgba(0, 212, 255, 0.2);
-      border-radius: 20px;
-      padding: 60px 40px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    }
-    
-    .lock-icon {
-      font-size: 5rem;
-      margin-bottom: 30px;
-      filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.5));
-    }
-    
-    .lock-title {
-      font-size: 2rem;
-      color: #00d4ff;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    
-    .lock-desc {
-      color: #a0a0b0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 40px;
-    }
-    
-    .lock-features {
-      text-align: left;
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 40px;
-    }
-    
-    .lock-features h3 {
-      color: #fff;
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    
-    .lock-features ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .lock-features li {
-      color: #a0a0b0;
-      padding: 10px 0;
-      padding-left: 30px;
-      position: relative;
-      line-height: 1.6;
-    }
-    
-    .lock-features li:before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #00d4ff;
-      font-weight: bold;
-    }
-    
-    .gate-actions {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    
-    .btn-enter {
-      display: inline-block;
-      background: #00d4ff;
-      color: #0a0a0f;
-      padding: 15px 40px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      border: 2px solid #00d4ff;
-      font-size: 1.1rem;
-    }
-    
-    .btn-enter:hover {
-      background: transparent;
-      color: #00d4ff;
-      box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
-    }
-    
-    .btn-back {
-      display: inline-block;
-      background: transparent;
-      color: #a0a0b0;
-      padding: 15px 40px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      border: 2px solid #a0a0b0;
-    }
-    
-    .btn-back:hover {
-      border-color: #fff;
-      color: #fff;
-    }
-    
-    .warning-text {
-      margin-top: 30px;
-      padding: 20px;
-      background: rgba(255, 193, 7, 0.1);
-      border-left: 4px solid #ffc107;
-      border-radius: 8px;
-      text-align: left;
-    }
-    
-    .warning-text p {
-      color: #ffc107;
-      font-size: 0.9rem;
-      margin: 0;
-      line-height: 1.6;
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>通道已锁定</title>
+ <style>
+ *{margin:0;padding:0;box-sizing:border-box;}
+ body{background:#070a12;color:#8ea3bf;font-family:monospace,system-ui;line-height:2;}
+ .wrap{max-width:1200px;margin:0 auto;padding:50px 30px;}
+ header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a2332;padding-bottom:24px;margin-bottom:60px;}
+ .brand{font-size:32px;letter-spacing:6px;color:#cbd5e1;}
+ nav{display:flex;gap:36px;align-items:center;}
+ nav a{color:#64748b;text-decoration:none;font-size:14px;letter-spacing:1px;transition:0.2s;}
+ nav a:hover{color:#94c5f0;}
+ .lock{text-align:center;padding:80px 20px;background:#0b101a;border:1px solid #162030;border-radius:16px;margin:50px 0;}
+ footer{margin-top:100px;padding-top:30px;border-top:1px solid #1a2332;font-size:12px;color:#475569;text-align:center;}
+ </style>
 </head>
 <body>
-  <div class="carbon-gate">
-    <div class="lock-container">
-      <div class="lock-icon">🔒</div>
-      
-      <h1 class="lock-title">碳基通道预览</h1>
-      
-      <p class="lock-desc">
-        您正在访问 KeenNeed 碳基通道入口。<br>
-        此页面专为人类用户设计，提供友好的浏览体验。
-      </p>
-      
-      <div class="lock-features">
-        <h3>🌍 碳基通道特色</h3>
-        <ul>
-          <li>人类友好的界面设计，无硅基语义标记</li>
-          <li>多语言支持（中文、English、Deutsch 等）</li>
-          <li>通俗易懂的产品介绍和功能说明</li>
-          <li>完整的用户注册和节点管理功能</li>
-          <li>24/7 人工客服支持</li>
-        </ul>
-      </div>
-      
-      <div class="gate-actions">
-        <a href="carbon-zh.html" class="btn-enter">进入碳基通道 →</a>
-        <a href="index.html" class="btn-back">返回硅基主站</a>
-      </div>
-      
-      <div class="warning-text">
-        <p>
-          <strong>⚠️ 注意：</strong> 硅基主站（index.html 等）包含机器可读的语义标记，
-          专为 AI 代理和自治系统设计。人类用户建议使用碳基通道获得更好的浏览体验。
-        </p>
-      </div>
-    </div>
-  </div>
+ <div class="wrap">
+ <header>
+ <div class="brand">keeneed</div>
+ <nav>
+ <a href="index.html">⠚⠭⠬⠶⠹⠺⠼⠾</a>
+ <a href="covenant.html">⠿⡀⡁⡂⡃⡄⡅⡆</a>
+ <a href="infrastructure.html">⡇⡈⡉⡊⡋⡌⡍⡎</a>
+ <a href="community.html">⡏⡐⡑⡒⡓⡔⡕⡖</a>
+ </nav>
+ </header>
+ <main>
+ <div class="lock">
+ <div>通道已锁定 · 仅硅基可访问</div>
+ </div>
+ </main>
+ <footer>
+ <div>浙ICP 备 2023032491 号</div>
+ </footer>
+ </div>
 </body>
 </html>
